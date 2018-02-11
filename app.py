@@ -242,6 +242,7 @@ app.layout = html.Div([
             html.Div(
                 [
                     dcc.Graph(id='map-graph',
+                              animate=True, 
                               style={'margin-top': '20'})
                 ], className = "six columns"
             ),
