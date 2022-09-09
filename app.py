@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 import dash
-from dash.dependencies import Input, Output, State, Event
-import dash_core_components as dcc
-import dash_html_components as html
+from dash.dependencies import Input, Output, State
+#import dash_core_components as dcc
+#import dash_html_components as html
+from dash import dcc
+from dash import html
 import dash_table_experiments as dt
 import plotly
 from plotly import graph_objs as go
@@ -186,7 +188,7 @@ app.layout = html.Div([
                                 {'label': 'Brooklyn', 'value': 'BROOKLYN'},
                                 {'label': 'Staten Island', 'value': 'STATEN ISLAND'}
                             ],
-                            values=['MANHATTAN', 'QUEENS', 'BRONX', 'BROOKLYN', 'STATEN ISLAND'],
+                            value=['MANHATTAN', 'QUEENS', 'BRONX', 'BROOKLYN', 'STATEN ISLAND'],
                             labelStyle={'display': 'inline-block'}
                     ),
                 ],
